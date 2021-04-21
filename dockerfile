@@ -1,6 +1,8 @@
 FROM centos
 MAINTAINER root
 RUN yum update
+RUN yum install docker
+RUN pull hello-world
 RUN echo"Hello madan"
 RUN ["echo", "Hello world"]
 
